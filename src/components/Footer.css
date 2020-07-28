@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     padding: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 0;
     background-color: #dd0c39;
-    color: red;
+    color:#282c34;
   }
