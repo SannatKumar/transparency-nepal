@@ -1,26 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: {},
+      isLoaded: false,
+    };
+  }
+  componentDidMount() {
+    fetch("https://nepalcorona.info/api/v1/data/nepal")
+      .then((res) => res.json())
+      .then((json) => {
+        this.setState({
+          isLoaded: true,
+          items: json,
+        });
+      });
+  }
+
+  render() {
+    var { isLoaded, items } = this.state;
+    console.log(this.state.items);
+
+    if (!isLoaded) {
+      return <div>Loading...</div>;
+    } else {
+      return (
+        <div className="App">
+          <li>
+            Corona Virus Tested Positive in Nepal: {items.tested_positive}
+          </li>
+          <li>
+            Corona Virus Tested Negative in Nepal: {items.tested_negative}
+          </li>
+          <li>Total Total: {items.tested_total}</li>
+          <li>Corona Virus in Isolation in Nepal: {items.quarantined}</li>
+          <li>Corona Virus Quarantined In Nepal: {items.tested_rdt}</li>
+          <li>Total tested RDT: {items.quarantined}</li>
+          <li>Corona Virus Pending Result: {items.pending_result}</li>
+          <li>Corona Virus Recovered: {items.recovered}</li>
+          <li>Corona Virus Deaths: {items.deaths}</li>
+        </div>
+      );
+    }
+  }
 }
 
 export default App;
