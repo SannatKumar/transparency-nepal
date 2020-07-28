@@ -1,11 +1,14 @@
 import React from 'react'
+import './Footer.css'
 
-function Footer() {
+class Footer extends React.Component{
+    render(){
   return (
-    <div>
-      <h1>Corona</h1>
+    <div className = "Footer">
+      <h1>Contacts</h1>
     </div>
-  )
+  );
+}
 }
 
 export default Footer
