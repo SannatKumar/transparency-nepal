@@ -29,29 +29,29 @@ class App extends React.Component {
     } else {
       return (
         <div className="App">
-          <table id="coronaresultdispaly">
+          <table id="coronaresultdisplay">
               <tr>
                 <th>Headers</th>
                 <th>Data</th>
               </tr>
               <tr>
-                <td>Corona Virus Tested Positive in Nepal:</td>
+                <td>Corona Virus Tested Positive in Nepal</td>
                 <td>{items.tested_positive}</td>               
               </tr>
               <tr>
-                <td>Corona Virus Tested Negative in Nepal:</td>
+                <td>Corona Virus Tested Negative in Nepal</td>
                 <td>{items.tested_negative}</td>              
               </tr>
               <tr>
-                <td>Tested Total:</td>
+                <td>Tested Total</td>
                 <td>{items.tested_total}</td>              
               </tr>
               <tr>
-                <td>Corona Virus in Isolation in Nepal:</td>
+                <td>Corona Virus in Isolation in Nepal</td>
                 <td>{items.in_isolation}</td>              
               </tr>
               <tr>
-                <td>Corona Virus Quarantined In Nepal:</td>
+                <td>Corona Virus Quarantined In Nepal</td>
                 <td>{items.quarantined}</td>              
               </tr>
               <tr>
@@ -59,11 +59,11 @@ class App extends React.Component {
                 <td>{items.tested_rdt}</td>              
               </tr>
               <tr>
-                <td>Corona Virus Pending Result:</td>
+                <td>Corona Virus Pending Result</td>
                 <td>{items.pending_result}</td>              
               </tr>
               <tr>
-                <td>Corona Virus Recovered:</td>
+                <td>Corona Virus Recovered</td>
                 <td>{items.recovered}</td>              
               </tr>
               <tr>
