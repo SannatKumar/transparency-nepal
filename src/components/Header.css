@@ -8,3 +8,9 @@
     background-color: #003594;
     color:white;
   }*/
+  .profile-pic{
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    Height: 100px;
+  }

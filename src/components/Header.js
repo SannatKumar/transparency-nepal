@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Navbar} from 'react-bootstrap';
+import rajkumar from '../rajkumar.jpg';
 
 
 class Header extends React.Component{
@@ -10,7 +11,11 @@ class Header extends React.Component{
       <div className = "Header">      
         <Navbar bg="dark" variant="dark">
                   <Navbar.Brand href="#home">
-                  Corona Virus Cases In Nepal
+                  <div className = "pic-title">
+                    <img src={rajkumar} className="profile-pic" alt="rajkumar" />
+                    <br /><br />
+                    <h2 className = "username">Raj Kumar Tiwari</h2>
+                  </div>
                   </Navbar.Brand>
               </Navbar>
       </div>
