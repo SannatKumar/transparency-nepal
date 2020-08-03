@@ -29,7 +29,7 @@ class App extends React.Component {
     } else {
       return (
         <div className="App">
-          <table id="coronaresultdisplay">
+          <table className = "table table-striped" id="coronaresultdisplay" aria-labelledby="tabelLabel">
               <tr>
                 <th>Headers</th>
                 <th>Data</th>
