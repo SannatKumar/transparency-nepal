@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import CoronaResult from './CoronaResult';
+import OsResult from './OsResult';
 import './App.css';
 
 class App extends React.Component {
@@ -17,10 +18,14 @@ class App extends React.Component {
             <li>
               <Link to="/coronaresult/">Nepal Corona Result</Link>
             </li>
+            <li>
+              <Link to="/osresult/">Click to see your operating system</Link>
+            </li>
           </ul>
         </nav>
         <Route path="./home" exact component={App} />
         <Route path="/coronaresult" exact component={CoronaResult} />
+        <Route path="/osresult" exact component={OsResult} />
 
       </div>
     </Router>
