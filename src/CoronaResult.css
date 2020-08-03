@@ -1,7 +1,7 @@
 .CoronaResult {
     text-align: left;
     background-color: #6bbaec;
-    min-height: 100vh;
+    min-height: 58vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
