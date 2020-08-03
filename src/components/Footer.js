@@ -4,13 +4,21 @@ import './Footer.css'
 class Footer extends React.Component{
     render(){
   return (
-    <div className = "Footer">
-      <h1>Contacts</h1>
-      <h1>About us</h1>
-      <h1>Social Media</h1>
-      <h1>Developer</h1>
-      <h1>@Software developed in Finland</h1>
-    </div>
+    <div class="container" className = "Footer">
+        <div class="row">
+          <div class="col-sm">
+          Contacts
+          </div>
+          <div class="col-sm">
+          Social Media
+          </div>
+          <div class="col-sm">
+          About Us
+          </div>
+          <div class="col-sm">@Software developed in Finland </div>
+        </div>
+</div>
+    
   );
 }
 }

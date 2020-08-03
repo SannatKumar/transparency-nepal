@@ -1,10 +1,10 @@
-.Footer {
-    box-sizing: border-box;
+.Footer {   
     width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 1em;
+    justify-content: Auto;
+    padding: 50px;
     margin-bottom: 0;
     background-color: #282c34;
     color:whitesmoke;
+    font-family: sans-serif;
+    font-weight: 100;    
   }
