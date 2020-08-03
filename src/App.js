@@ -31,45 +31,13 @@ class App extends React.Component {
         <div className="App">
           <table className = "table table-striped" id="coronaresultdisplay" aria-labelledby="tabelLabel">
               <tr>
-                <th>Headers</th>
-                <th>Data</th>
+                <th>Projects</th>
+                <th>Link</th>
               </tr>
               <tr>
-                <td>Corona Virus Tested Positive in Nepal</td>
+                <td>Nepal Corona Virus Result</td>
                 <td>{items.tested_positive}</td>               
-              </tr>
-              <tr>
-                <td>Corona Virus Tested Negative in Nepal</td>
-                <td>{items.tested_negative}</td>              
-              </tr>
-              <tr>
-                <td>Tested Total</td>
-                <td>{items.tested_total}</td>              
-              </tr>
-              <tr>
-                <td>Corona Virus in Isolation in Nepal</td>
-                <td>{items.in_isolation}</td>              
-              </tr>
-              <tr>
-                <td>Corona Virus Quarantined In Nepal</td>
-                <td>{items.quarantined}</td>              
-              </tr>
-              <tr>
-                <td>Corona Virus Tested RDT</td>
-                <td>{items.tested_rdt}</td>              
-              </tr>
-              <tr>
-                <td>Corona Virus Pending Result</td>
-                <td>{items.pending_result}</td>              
-              </tr>
-              <tr>
-                <td>Corona Virus Recovered</td>
-                <td>{items.recovered}</td>              
-              </tr>
-              <tr>
-                <td>Corona Virus Deaths</td>
-                <td>{items.deaths}</td>              
-              </tr>            
+              </tr>          
             </table>    
         </div>
       );
