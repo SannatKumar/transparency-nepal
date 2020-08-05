@@ -14,7 +14,7 @@ class Header extends React.Component {
       <div className="Header">
           <Router>
                 <Navbar bg="dark" variant="dark">
-                  <Navbar.Brand href="#home">
+                  <Navbar.Brand href="/app">
                     <a class="navbar-brand" href="/app">
                       JagratNepal.Com
                     </a>
@@ -47,6 +47,7 @@ class Header extends React.Component {
                     </div>
                   </Navbar.Brand>
                 </Navbar>
+              <Route path="/" exact component={App} />
               <Route path="/app" exact component={App} />
               <Route path="/coronaresult" exact component={CoronaResult} />
               <Route path="/osresult" exact component={OsResult} />
