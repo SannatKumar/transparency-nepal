@@ -15,7 +15,8 @@ class Footer extends React.Component{
           <div class="col-sm">
           About Us
           </div>
-          <div class="col-sm">@Software developed in Finland </div>
+          <div class="col-sm">@Software <br />
+          developed in Finland </div>
         </div>
 </div>
     
