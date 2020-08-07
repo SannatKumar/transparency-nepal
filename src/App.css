@@ -4,7 +4,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: Auto;
   font-size: calc(5px + 2vmin);
   color:whitesmoke;
   border-radius: 2px solid red;
