@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import CoronaResult from "../CoronaResult";
 import OsResult from "../OsResult";
 import PortFolio from "../PortFolio";
+import Blog from '../Blog';
 import App from "../App";
 
 class Header extends React.Component {
@@ -43,6 +44,9 @@ class Header extends React.Component {
                         <li class="nav-item nav-link">
                           <Link to="/portfolio/">My Portfolio</Link>
                         </li>
+                        <li class="nav-item nav-link">
+                          <Link to="/blog/">Blog</Link>
+                        </li>
                       </ul>
                     </div>
                   </Navbar.Brand>
@@ -52,6 +56,7 @@ class Header extends React.Component {
               <Route path="/coronaresult" exact component={CoronaResult} />
               <Route path="/osresult" exact component={OsResult} />
               <Route path="/portfolio" exact component={PortFolio} />
+              <Route path="/blog" exact component={Blog} />
           </Router>
         </div>
     );
