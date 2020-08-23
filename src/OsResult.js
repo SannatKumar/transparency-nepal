@@ -2,7 +2,6 @@ import React from 'react';
 import './CoronaResult.css';
 
 class OsResult extends React.Component {
- 
     render(){
         var OSName = "Unknown";
         if (window.navigator.userAgent.indexOf("Windows NT 10.0") !== -1) OSName="Windows 10";
@@ -13,7 +12,7 @@ class OsResult extends React.Component {
         if (window.navigator.userAgent.indexOf("Windows NT 5.0") !== -1) OSName="Windows 2000";
         if (window.navigator.userAgent.indexOf("Mac")            !== -1) OSName="Mac/iOS";
         if (window.navigator.userAgent.indexOf("X11")            !== -1) OSName="UNIX";
-        if (window.navigator.userAgent.indexOf("Linux")          !== -1) OSName="Linux"; 
+        if (window.navigator.userAgent.indexOf("Linux")          !== -1) OSName="Linux";         
         return (
           <div className="OsResult">
             <table className = "table table-striped" id="coronaresultdisplay" aria-labelledby="tabelLabel">
@@ -24,7 +23,15 @@ class OsResult extends React.Component {
                 <tr>
                   <td>Your Operating System is :</td>
                   <td>{OSName}</td>               
-                </tr>    
+                </tr>
+                <tr>
+                <td>Your location latitude is :</td>
+                <td>Hi</td>               
+              </tr>
+              <tr>
+                <td>Your location longitude is :</td>
+                <td>Hei</td>               
+              </tr>    
               </table>    
           </div>
         );
