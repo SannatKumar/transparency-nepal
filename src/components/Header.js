@@ -8,23 +8,10 @@ import OsResult from "../OsResult";
 import PortFolio from "../PortFolio";
 import Blog from '../Blog';
 import App from "../App";
+import Login from "../containers/Login";
 
 class Header extends React.Component {
-   render()
-  {
-    var language = {
-      eng:{
-        first: "Home"
-      },
-      nep:{
-      pahilo: "घर"
-    }
-    };
-    if(window.location.hash){
-      if(window.location.hash === "nep"){
-        home.textContent = language.nep.pahilo;
-      }
-    }
+   render(){
     return (
       <div className="Header">
           <Router>
@@ -61,13 +48,10 @@ class Header extends React.Component {
                         <li class="nav-item nav-link" id = "blog">
                           <Link to="/blog/">Blog</Link>
                         </li>
-                        <li class="nav-item nav-link" id = "english">
-                          <a href = "eng" data-reload>English</a>
+                        <li class="nav-item nav-link" id = "login">
+                          <Link to="/login">Login</Link>
                         </li>
-                        <li class="nav-item nav-link" id = "nepali">
-                          <a href = "nep" data-reload>Nepali</a>
-                        </li>
-                      </ul>
+                    </ul>
                     </div>
                   </Navbar.Brand>
                 </Navbar>
@@ -77,6 +61,7 @@ class Header extends React.Component {
               <Route path="/osresult" exact component={OsResult} />
               <Route path="/portfolio" exact component={PortFolio} />
               <Route path="/blog" exact component={Blog} />
+              <Route path="/login" exact component={Login} />
           </Router>
         </div>
     );
