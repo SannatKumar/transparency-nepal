@@ -10,7 +10,7 @@ class CoronaResult extends React.Component {
       };
     }
     componentDidMount() {
-      fetch("https://nepalcorona.info/api/v1/data/nepal")
+      fetch("https://data.nepalcorona.info/api/v1/covid")
         .then((res) => res.json())
         .then((json) => {
           this.setState({
@@ -36,7 +36,7 @@ class CoronaResult extends React.Component {
                 </tr>
                 <tr>
                   <td>Corona Virus Tested Positive in Nepal</td>
-                  <td>{items.tested_positive}</td>               
+                  <td>{items.length}</td>               
                 </tr>
                 <tr>
                   <td>Corona Virus Tested Negative in Nepal</td>
