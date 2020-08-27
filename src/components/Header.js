@@ -8,6 +8,7 @@ import OsResult from "../OsResult";
 import PortFolio from "../PortFolio";
 import Blog from '../Blog';
 import App from "../App";
+import coronaResult from './src/coronareult/coronaResult.js';
 import Login from "../containers/Login";
 
 class Header extends React.Component {
@@ -39,6 +40,9 @@ class Header extends React.Component {
                         <li class="nav-item nav-link" id = "nepalcorona">
                           <Link to="/coronaresult/">Nepal Corona Result</Link>
                         </li>
+                        <li class="nav-item nav-link" id = "coronadetail">
+                          <Link to="/coronadetail/">Nepal Corona Map</Link>
+                        </li>
                         <li class="nav-item nav-link" id = "youros">
                           <Link to="/osresult/">Your OS</Link>
                         </li>
@@ -59,6 +63,7 @@ class Header extends React.Component {
               <Route path="/app" exact component={App} />
               <Route path="/coronaresult" exact component={CoronaResult} />
               <Route path="/osresult" exact component={OsResult} />
+              <Route path="/coronaresult" exact component={CoronaResult} />
               <Route path="/portfolio" exact component={PortFolio} />
               <Route path="/blog" exact component={Blog} />
               <Route path="/login" exact component={Login} />
