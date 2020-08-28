@@ -1,57 +1,44 @@
-import React from "react";
+import React,{Component} from "react";
 
+class App extends Component {
+    render() {
+        return ( 
+        < div className = "Main" > 
+          <div className="CoronaResult">
+            <div class="container">
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className = "Main">
-      <div className="CoronaResult">
-            <table className = "table table-striped" id="coronaresultdisplay" aria-labelledby="tabelLabel">
-                <tr>
-                  <th>Headers</th>
-                  <th>Data</th>
-                </tr>
-                <tr>
-                  <td>Projects</td>
-                  <td>Links</td>               
-                </tr>
-                <tr>
-                  <td>PHP</td>
-                  <td>Links</td>              
-                </tr>
-                <tr>
-                  <td>Sunday</td>
-                  <td>Sununtai</td>              
-                </tr>
-                <tr>
-                  <td>Monday</td>
-                  <td>Manantai</td>              
-                </tr>
-                <tr>
-                  <td>Tuesday</td>
-                  <td>Tiistai</td>              
-                </tr>
-                <tr>
-                  <td>Wednesday</td>
-                  <td>Keskivikko</td>              
-                </tr>
-                <tr>
-                  <td>Thursday</td>
-                  <td>Torstai</td>              
-                </tr>
-                <tr>
-                  <td>Friday</td>
-                  <td>Perjantai</td>              
-                </tr>
-                <tr>
-                  <td>Saturday</td>
-                  <td>Launtai</td>              
-                </tr>            
-              </table>    
-          </div>
-          </div>
-    );
-  }
+             <div id="navbar-collapse" class="navbar-collapse collapse">
+                            <div class="region region-navigation-collapsible">
+                                <nav role="navigation" aria-labelledby="block-blogstheme-main-menu-menu"
+                                    id="block-blogstheme-main-menu">
+                                    <h2 class="sr-only" id="block-blogstheme-main-menu-menu">Main navigation</h2>
+
+                                    <ul class="menu menu--main nav navbar-nav">
+                                        <li class="first">
+                                            <a href="/" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="/blogs" data-drupal-link-system-path="blogs">All Blogs</a>
+                                        </li>
+                                        <li>
+                                            <a href="/topics" data-drupal-link-system-path="topics">Topics</a>
+                                        </li>
+                                        <li>
+                                            <a href="/contact-us" data-drupal-link-system-path="contact/main_contact_us">Contact</a>
+                                        </li>
+                                        <li class="last">
+                                            <a href="/search" data-drupal-link-system-path="search">Search</a>
+                                        </li>
+                                    </ul>
+
+                                </nav>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                
+                                      )
 }
-
-export default App;
+}
+                                      export default App;
