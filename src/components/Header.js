@@ -18,11 +18,11 @@ class Header extends React.Component {
           <Router>
                 <Navbar bg="dark" variant="dark">
                   <Navbar.Brand href="/app">
-                    <a class="navbar-brand" href="/app">
+                    <a className="navbar-brand" href="/app">
                       JagratNepal.Com
                     </a>
                     <button
-                      class="navbar-toggler"
+                      className="navbar-toggler"
                       type="button"
                       data-toggle="collapse"
                       data-target="#navbarNav"
@@ -32,27 +32,27 @@ class Header extends React.Component {
                     >
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav">
-                        <li class="nav-item nav-link active" id = "home">
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                      <ul className="navbar-nav">
+                        <li className="nav-item nav-link active" id = "home">
                           <Link to="/app/">Home</Link>
                         </li>
-                        <li class="nav-item nav-link" id = "nepalcorona">
+                        <li className="nav-item nav-link" id = "nepalcorona">
                           <Link to="/coronaresult/">Nepal Corona Result</Link>
                         </li>
-                        <li class="nav-item nav-link" id = "coronadetail">
+                        <li className="nav-item nav-link" id = "coronadetail">
                           <Link to="/coronadetail/">Nepal Corona Map</Link>
                         </li>
-                        <li class="nav-item nav-link" id = "youros">
+                        <li className="nav-item nav-link" id = "youros">
                           <Link to="/osresult/">Your OS</Link>
                         </li>
-                        <li class="nav-item nav-link" id = "myportfolio">
+                        <li className="nav-item nav-link" id = "myportfolio">
                           <Link to="/portfolio/">My Portfolio</Link>
                         </li>
-                        <li class="nav-item nav-link" id = "blog">
+                        <li className="nav-item nav-link" id = "blog">
                           <Link to="/blog/">Blog</Link>
                         </li>
-                        <li class="nav-item nav-link" id = "login">
+                        <li className="nav-item nav-link" id = "login">
                           <Link to="/login">Login</Link>
                         </li>
                     </ul>
