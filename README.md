@@ -1,6 +1,6 @@
 
 # Description
-This is a simple react app project that displays realtime corona virus result from Nepal using the web API available. Also, the Project displays the user operating system. The portfolio section is in progress.
+This is a simple react app project that displays realtime corona virus result from Nepal using the web API available. Also, the Project displays the user operating system. The Project also has a new login section. The portfolio section is in progress.
 
 # Bolier Plate code
 
