@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Component} from "react";
 import "./Header.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar } from "react-bootstrap";
@@ -11,31 +11,23 @@ import App from "../App";
 import CoronaDetail from '../coronaresult/CoronaDetail.js';
 import Login from "../containers/Login";
 
-class Header extends React.Component {
+class Header extends Component {
    render(){
     return (
       <div className="Header">
           <Router>
-                <Navbar bg="dark" variant="dark">
-                  <Navbar.Brand href="/app">
-                    <a className="navbar-brand" href="/app">
+                <Navbar >
+                  <Navbar.Brand href="/home">
+                    <a className="navbar-brand" id ="webtitle" href="/home">
                       JagratNepal.Com
-                    </a>
-                    <button
-                      className="navbar-toggler"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#navbarNav"
-                      aria-controls="navbarNav"
-                      aria-expanded="false"
-                      aria-label="Toggle navigation"
-                    >
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </a>              
                     <div className="collapse navbar-collapse" id="navbarNav">
                       <ul className="navbar-nav">
                         <li className="nav-item nav-link active" id = "home">
-                          <Link to="/app/">Home</Link>
+                          <Link to="/home/">Home</Link>
+                        </li>
+                        <li className="nav-item nav-link" id = "app">
+                          <Link to="/app/"></Link>
                         </li>
                         <li className="nav-item nav-link" id = "nepalcorona">
                           <Link to="/coronaresult/">Nepal Corona Result</Link>
@@ -59,7 +51,6 @@ class Header extends React.Component {
                     </div>
                   </Navbar.Brand>
                 </Navbar>
-              <Route path="/" exact component={App} />
               <Route path="/app" exact component={App} />
               <Route path="/coronaresult" exact component={CoronaResult} />
               <Route path="/osresult" exact component={OsResult} />
