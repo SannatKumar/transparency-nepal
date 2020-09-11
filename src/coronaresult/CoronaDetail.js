@@ -13,8 +13,8 @@ class CoronaDetail extends Component {
         />
     );
     return (
-      <div classNameName="coronadetailui">
-        <div classNameName="mainapp">
+      <div className="coronadetailui">
+        <div className="mainapp">
           <div className="container-fluid h-100">
             <div className="row h-100">
               <div className="col-md-5">
@@ -59,7 +59,8 @@ class CoronaDetail extends Component {
                       </div>
                     </div>
                     <div className="col-sm">
-                      <div className="card text-white bg-danger mb-3">
+                      <div className="card text-white
+                       bg-danger mb-3">
                         <h5 className="card-header">Deaths</h5>
                         <div className="card-body">
                           <h5
