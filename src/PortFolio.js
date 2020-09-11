@@ -11,17 +11,26 @@ class PortFolio extends React.Component {
         <div className="Header">
           <Navbar bg="white" variant="white">
             <Navbar.Brand href="#home">
+            <div className="introductionnav">
               <div className="pic-title">
                 <img src={rajkumar} className="profile-pic" alt="rajkumar" />
-                <br />
-                <br />
+               
+                
                 <h2 className="username">Raj Kumar Tiwari</h2>
+                <p id="biodetail">I am an Information Technology graduate from Turku University of Applied Sciences with Embedded system as a competence track.
+                  <br />I am a Web App developer looking for a Job. You can check my Projects in the below mentioned link.
+                  Hobbies: Swimming, Singing, Coding, Cooking. 
+                </p>
               </div>
+              </div>
+             
+     
+              
             </Navbar.Brand>
           </Navbar>
         </div>
 
-        <div className="portbody">
+        <div className="portbody" id ="portbody">
           <div class="row">
             <div class="column">
               <div class="content">
