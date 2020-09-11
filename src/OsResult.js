@@ -1,5 +1,5 @@
 import React from 'react';
-import './CoronaResult.css';
+import './osresult.css';
 
 class OsResult extends React.Component {
     render(){
