@@ -3,15 +3,18 @@
   background-color: white;
 }
 .profile-pic{
-  border-radius: 50px;
+  border-radius: 70px;
   float: left;
   width: 100px;
   Height: 100px;
   background-color:black;
 }
+.userbio{
+  padding-left: 70px;
+}
 
 .portbody {
-  padding: 5px;
+  padding: 10px;
   border-radius: 2px;
   border-color: teal;
 }
