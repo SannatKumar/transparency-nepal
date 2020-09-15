@@ -23,14 +23,8 @@ class CoronaDetail extends Component {
                 </h1>
                 <p className="lead">
                   This is a map visualising the data of the number of confirmed
-                  cases of coronavirus disease Covid-19 in Nepal. The{" "}
-                  <a
-                    rel="noopener noreferrer"
-                    href="https://yle.fi/uutiset/osasto/news/woman_in_helsinki_tests_positive_for_novel_coronavirus/11229433"
-                  >
-                    first case in Nepal was reported on Jan 13, 2020
-                  </a>{" "}
-                  and since then the numbers have been rapidly rising.
+                  cases of coronavirus disease Covid-19 in Nepal. The first case of local transmssion was confirmed on 4 April in Kailali District.
+                  And since then the numbers have been rapidly rising.
                 </p>
 
                 <div className="container my-4" id="count-cards">
@@ -114,16 +108,7 @@ class CoronaDetail extends Component {
                       </a>{" "}
                       (World Health Organization)
                     </li>
-                    <li>
-                      <a
-                         rel="noopener noreferrer"
-                        href="https://yle.fi/uutiset/osasto/news/coronavirus_latest_large_events_banned_109_confirmed_cases/11249610"
-                        
-                      >
-                        Latest news
-                      </a>{" "}
-                      Nepal Kantipur News
-                    </li>
+               
                     <li>
                       <a
                        rel="noopener noreferrer"
